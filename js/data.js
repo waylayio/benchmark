@@ -10,14 +10,14 @@ var data = [
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'Explainability', value: 1}
 ],
 [
-{ legend: 'Finite State Machines', shortLegend: 'FSM', axis: 'Modeling Complex Logic', value: 0.2},
+{ legend: 'Finite State Machines', shortLegend: 'FSM', axis: 'Modeling Complex Logic', value: 0.4},
 { legend: 'Finite State Machines', shortLegend: 'FSM', axis: 'Time Series Analysis', value: 0},
 { legend: 'Finite State Machines', shortLegend: 'FSM', axis: 'Stream Processing', value: 0.1},
 { legend: 'Finite State Machines', shortLegend: 'FSM', axis: 'Modeling Uncertainty', value: 0},
-{ legend: 'Finite State Machines', shortLegend: 'FSM', axis: 'APIs & serverless', value: 0.4},
-{ legend: 'Finite State Machines', shortLegend: 'FSM', axis: 'Zero-touch automation', value: 0.4},
+{ legend: 'Finite State Machines', shortLegend: 'FSM', axis: 'APIs & serverless', value: 0.8 },
+{ legend: 'Finite State Machines', shortLegend: 'FSM', axis: 'Zero-touch automation', value: 0.7},
 { legend: 'Finite State Machines', shortLegend: 'FSM', axis: 'Scalability', value: 0.4},
-{ legend: 'Finite State Machines', shortLegend: 'FSM', axis: 'Explainability', value: 0.4}
+{ legend: 'Finite State Machines', shortLegend: 'FSM', axis: 'Explainability', value: 0.6}
 ],
 [
 { legend: 'Flow Processing Engines', shortLegend: 'FBP', axis: 'Modeling Complex Logic', value: 0.2},
@@ -27,7 +27,7 @@ var data = [
 { legend: 'Flow Processing Engines', shortLegend: 'FBP', axis: 'APIs & serverless', value: 0.6},
 { legend: 'Flow Processing Engines', shortLegend: 'FBP', axis: 'Zero-touch automation', value: 0.2},
 { legend: 'Flow Processing Engines', shortLegend: 'FBP', axis: 'Scalability', value: 0.8},
-{ legend: 'Flow Processing Engines', shortLegend: 'FBP', axis: 'Explainability', value: 0.4}
+{ legend: 'Flow Processing Engines', shortLegend: 'FBP', axis: 'Explainability', value: 0.3}
 ],
 [
 { legend: 'Stream Processing Engines', shortLegend: 'Stream Proc.', axis: 'Modeling Complex Logic', value:0.2},
@@ -44,10 +44,10 @@ var data = [
 { legend: 'Forward Chaining Engines', shortLegend: 'Forward Chaining', axis: 'Time Series Analysis',value: 0},
 { legend: 'Forward Chaining Engines', shortLegend: 'Forward Chaining', axis: 'Stream Processing',value: 0},
 { legend: 'Forward Chaining Engines', shortLegend: 'Forward Chaining', axis: 'Modeling Uncertainty', value: 0},
-{ legend: 'Forward Chaining Engines', shortLegend: 'Forward Chaining', axis: 'APIs & serverless', value: 0.2},
+{ legend: 'Forward Chaining Engines', shortLegend: 'Forward Chaining', axis: 'APIs & serverless', value: 0.1},
 { legend: 'Forward Chaining Engines', shortLegend: 'Forward Chaining', axis: 'Zero-touch automation', value: 0.2},
 { legend: 'Forward Chaining Engines', shortLegend: 'Forward Chaining', axis: 'Scalability', value: 0.2},
-{ legend: 'Forward Chaining Engines', shortLegend: 'Forward Chaining', axis: 'Explainability', value: 0.2}
+{ legend: 'Forward Chaining Engines', shortLegend: 'Forward Chaining', axis: 'Explainability', value: 0.3}
 ],
 [
 { legend: 'Condition Action Engines', shortLegend: 'Cond.-Action', axis: 'Modeling Complex Logic', value: 0},
@@ -58,6 +58,16 @@ var data = [
 { legend: 'Condition Action Engines', shortLegend: 'Cond.-Action', axis: 'Zero-touch automation', value: 0.8},
 { legend: 'Condition Action Engines', shortLegend: 'Cond.-Action', axis: 'Scalability', value: 0.8},
 { legend: 'Condition Action Engines', shortLegend: 'Cond.-Action', axis: 'Explainability', value: 1}
+],
+[
+{ legend: 'Node RED', shortLegend: 'Node RED', axis: 'Modeling Complex Logic', value: 0.2},
+{ legend: 'Node RED', shortLegend: 'Node RED', axis: 'Time Series Analysis', value: 0},
+{ legend: 'Node RED', shortLegend: 'Node RED', axis: 'Stream Processing', value: 0.1},
+{ legend: 'Node RED', shortLegend: 'Node RED', axis: 'Modeling Uncertainty',  value: 0},
+{ legend: 'Node RED', shortLegend: 'Node RED', axis: 'APIs & serverless', value: 0.1},
+{ legend: 'Node RED', shortLegend: 'Node RED', axis: 'Zero-touch automation', value: 0.1},
+{ legend: 'Node RED', shortLegend: 'Node RED', axis: 'Scalability', value: 0.1},
+{ legend: 'Node RED', shortLegend: 'Node RED', axis: 'Explainability', value: 0.3}
 ]
 // ,
 // [
@@ -154,16 +164,16 @@ var industries = [
 { legend: 'Track-Trace', axis: 'Scalability', value: 0.6},
 { legend: 'Track-Trace', axis: 'Explainability', value: 1}
 ],
-[
-{ legend: 'Edge', axis: 'Modeling Complex Logic', value: 0.4},
-{ legend: 'Edge', axis: 'Time Series Analysis', value: 0.8},
-{ legend: 'Edge', axis: 'Stream Processing', value: 1},
-{ legend: 'Edge', axis: 'Modeling Uncertainty', value: 0.1},
-{ legend: 'Edge', axis: 'APIs & serverless', value: 0.4},
-{ legend: 'Edge', axis: 'Zero-touch automation', value: 0.4},
-{ legend: 'Edge', axis: 'Scalability', value: 0.4},
-{ legend: 'Edge', axis: 'Explainability', value: 1.0}
-],
+// [
+// { legend: 'Edge', axis: 'Modeling Complex Logic', value: 0.4},
+// { legend: 'Edge', axis: 'Time Series Analysis', value: 0.8},
+// { legend: 'Edge', axis: 'Stream Processing', value: 1},
+// { legend: 'Edge', axis: 'Modeling Uncertainty', value: 0.1},
+// { legend: 'Edge', axis: 'APIs & serverless', value: 0.4},
+// { legend: 'Edge', axis: 'Zero-touch automation', value: 0.4},
+// { legend: 'Edge', axis: 'Scalability', value: 0.4},
+// { legend: 'Edge', axis: 'Explainability', value: 1.0}
+// ],
 [
 { legend: 'Oil-Gas', axis: 'Modeling Complex Logic', value: 0.8 },
 { legend: 'Oil-Gas', axis: 'Time Series Analysis', value: 1.0 },
@@ -205,9 +215,9 @@ function calculateScore () {
      var score = 0
      rule.forEach(m =>{
        score += parseFloat(m.value) * parseFloat(industry.find(x => x.axis === m.axis).value)
-       const d = parseFloat(parseFloat(score).toFixed(1))
-       scores[rule[0].legend] = d
      })
+     const total = industry.map(item => item.value).reduce((prev, next) => prev + next)
+     scores[rule[0].legend] = parseFloat(score /total * 100).toFixed(1)
    })
    return { legend: industry[0].legend, scores } 
   })
@@ -225,11 +235,12 @@ const COLORS = [
 var chart = {
     type: 'bar', 
     options: {
-       legend: {display: true},
-       title: {
-         display: true,
-         text: 'Industry scores'
-      }
+       legend: {display: true}
+      //  ,
+      //  title: {
+      //    display: true,
+      //    text: 'Industry scores'
+      // }
     },
     data: {
      datasets: []

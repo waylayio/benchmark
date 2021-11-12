@@ -80,11 +80,20 @@
 
     <section style="padding: 4rem 0" class="bg-light">
       <div id="industries" class="mx-auto text-center">
-        <h1>Automation Requirements per Vertical</h1>
+        <h1>Rules Score per Vertical</h1>
       </div>
-      <br>
       <div class="container">
         <canvas id="myChart" style="width:100%"></canvas>
+      </div>
+      <div class="container">
+        <hr>
+        <a data-toggle="collapse" href="#collapseScore" role="button" aria-expanded="false" aria-controls="collapseRules">Explanation</a>
+        <div class="collapse" id="collapseScore">
+          <div class="card card-body">
+            <p><i>Please note that in most of the cases Rules Engine are complemented by other tools and applications in order to create end to end solutions. This score indicates how much of work on business automation (rules) is required before customers can build the end solution on top (mobile app, customer facing app etc.). Every score less than 50-60% indicates that additional tools and applications will be required to close the automation gap.</i></p>
+            <a data-toggle="collapse" href="#collapseScore" role="button" aria-expanded="false" aria-controls="collapseRules">Close</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -150,7 +159,11 @@
     <script src="js/radarChart.js"></script> 
     <script src="js/data.js"></script>
     <script src="js/plotData.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js
+
+
+
+">></script>
     <style>      
       .legend {
         font-family: 'Fira Sans';

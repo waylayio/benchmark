@@ -1,0 +1,59 @@
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  //background: linear-gradient(to top, #{fade-out($black, .3)} 20%,#{fade-out($black, .8)} 80%, $white 100%), url('../img/pr_white.png');
+  background: url('../img/pr_white.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  h1 {
+    font-family: 'Fira Sans';
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    letter-spacing: 0.8rem;
+    color: white;
+    // text-shadow: 5px 4px 5px rgba(0,0,0, 0.25);
+    // background: -webkit-linear-gradient(fade-out(white, 0.05), fade-out(white, 0.01));
+    // -webkit-text-fill-color: transparent;
+    // -webkit-background-clip: text;
+  }
+  h2 {
+    font-family: 'Merriweather';
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.8rem;
+    color: white;
+    // text-shadow: 5px 4px 5px rgba(0,0,0, 0.25);
+    // background: -webkit-linear-gradient(fade-out(white, 0.05), fade-out(white, 0.01));
+    // -webkit-text-fill-color: transparent;
+    // -webkit-background-clip: text;
+  }
+  @media(min-width: 768px) {
+    h1 {
+      font-size: 4rem;
+      line-height: 6rem;
+    }
+    h2 {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+  }
+  @media(min-width: 992px) {
+    height: 100vh;
+    padding: 0;
+    h1 {
+      font-size: 6.5rem;
+      line-height: 6.5rem;
+      letter-spacing: 0.8rem;
+    }
+    h2 {
+      font-size: 3rem;
+      line-height: 3rem;
+      letter-spacing: 0.8rem;
+    }
+  }
+}

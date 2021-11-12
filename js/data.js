@@ -7,12 +7,13 @@ var data = [
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'Machine Learning/AI', value: 1.0},
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'APIs & serverless', value: 1.0},
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'Zero-touch-automation', value: 1},
-{ legend: 'Waylay', shortLegend: 'Waylay', axis: 'Scalability', value: 0.8},
+{ legend: 'Waylay', shortLegend: 'Waylay', axis: 'Scalability', value: 0.85},
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'Explainability', value: 1},
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'Integration Simplicity', value: 1},
-{ legend: 'Waylay', shortLegend: 'Waylay', axis: 'Data Ingestion', value: 0.8},
+{ legend: 'Waylay', shortLegend: 'Waylay', axis: 'Data Ingestion', value: 1},
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'LPWAN support', value: 1},
-{ legend: 'Waylay', shortLegend: 'Waylay', axis: 'Device Management', value: 0.3}
+{ legend: 'Waylay', shortLegend: 'Waylay', axis: 'Device Management', value: 0.3},
+{ legend: 'Waylay', shortLegend: 'Waylay', axis: 'Edge Ready', value: 1}
 ],
 [
 { legend: 'AWS', shortLegend: 'AWS', axis: 'Rules Engine', value: 0.4},
@@ -27,7 +28,8 @@ var data = [
 { legend: 'AWS', shortLegend: 'AWS', axis: 'Integration Simplicity', value: 0.3},
 { legend: 'AWS', shortLegend: 'AWS', axis: 'Data Ingestion', value: 0.9},
 { legend: 'AWS', shortLegend: 'AWS', axis: 'LPWAN support', value: 0.2},
-{ legend: 'AWS', shortLegend: 'AWS', axis: 'Device Management', value: 0.8}
+{ legend: 'AWS', shortLegend: 'AWS', axis: 'Device Management', value: 0.8},
+{ legend: 'AWS', shortLegend: 'AWS', axis: 'Edge Ready', value: 0}
 ],
 [
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Rules Engine', value: 0.4},
@@ -42,22 +44,24 @@ var data = [
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Integration Simplicity', value: 0.5},
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Data Ingestion', value: 1},
 { legend: 'Azure', shortLegend: 'Azure', axis: 'LPWAN support', value: 0.4},
-{ legend: 'Azure', shortLegend: 'Azure', axis: 'Device Management', value: 1}
+{ legend: 'Azure', shortLegend: 'Azure', axis: 'Device Management', value: 1},
+{ legend: 'Azure', shortLegend: 'Azure', axis: 'Edge Ready', value: 0}
 ],
 [
 { legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Rules Engine', value: 0.25},
 { legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Time Series Analysis', value: 0.7},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Event Processing', value: 0.8},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Event Processing', value: 0.5},
 { legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Stream Processing', value: 0.5},
 { legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Machine Learning/AI',  value: 0.6},
 { legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'APIs & serverless', value: 0.2},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Zero-touch-automation', value: 0.6},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Zero-touch-automation', value: 0.2},
 { legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Scalability', value: 0.5},
 { legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Explainability', value: 0.3},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Integration Simplicity', value: 0.8},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Data Ingestion', value: 1},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'LPWAN support', value: 1},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Device Management', value: 1}
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Integration Simplicity', value: 0.5},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Data Ingestion', value: 0.85},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'LPWAN support', value: 0.75},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Device Management', value: 1},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Edge Ready', value: 0}
 ],
 [
 { legend: 'Kafka', shortLegend: 'Kafka', axis: 'Rules Engine', value: 0 },
@@ -72,7 +76,8 @@ var data = [
 { legend: 'Kafka', shortLegend: 'Kafka', axis: 'Integration Simplicity', value: 0.3},
 { legend: 'Kafka', shortLegend: 'Kafka', axis: 'Data Ingestion', value: 0.5},
 { legend: 'Kafka', shortLegend: 'Kafka', axis: 'LPWAN support', value: 0},
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Device Management', value: 0}
+{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Device Management', value: 0},
+{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Edge Ready', value: 0}
 ],
 [
 { legend: 'Kafka-Influx-Grafana', shortLegend: 'Kafka-Influx-Grafana', axis: 'Rules Engine', value: 0 },
@@ -87,7 +92,8 @@ var data = [
 { legend: 'Kafka-Influx-Grafana', shortLegend: 'Kafka-Influx-Grafana', axis: 'Integration Simplicity', value: 0.5},
 { legend: 'Kafka-Influx-Grafana', shortLegend: 'Kafka-Influx-Grafana', axis: 'Data Ingestion', value: 0.5},
 { legend: 'Kafka-Influx-Grafana', shortLegend: 'Kafka-Influx-Grafana', axis: 'LPWAN support', value: 0},
-{ legend: 'Kafka-Influx-Grafana', shortLegend: 'Kafka-Influx-Grafana', axis: 'Device Management', value: 0}
+{ legend: 'Kafka-Influx-Grafana', shortLegend: 'Kafka-Influx-Grafana', axis: 'Device Management', value: 0},
+{ legend: 'Kafka-Influx-Grafana', shortLegend: 'Kafka-Influx-Grafana', axis: 'Edge Ready', value: 0}
 ],
 [
 { legend: 'Node RED', shortLegend: 'Node RED', axis: 'Rules Engine', value: 0.2},
@@ -102,7 +108,8 @@ var data = [
 { legend: 'Node RED', shortLegend: 'Node RED', axis: 'Integration Simplicity', value: 0.3},
 { legend: 'Node RED', shortLegend: 'Node RED', axis: 'Data Ingestion', value: 1},
 { legend: 'Node RED', shortLegend: 'Node RED', axis: 'LPWAN support', value: 0.1},
-{ legend: 'Node RED', shortLegend: 'Node RED', axis: 'Device Management', value: 0}
+{ legend: 'Node RED', shortLegend: 'Node RED', axis: 'Device Management', value: 0},
+{ legend: 'Node RED', shortLegend: 'Node RED', axis: 'Edge Ready', value: 1}
 ]
 ];
 
@@ -120,7 +127,8 @@ var industries = [
 { legend: 'Security', axis: 'Integration Simplicity', value: 1.0},
 { legend: 'Security', axis: 'Data Ingestion', value: 1.0},
 { legend: 'Security', axis: 'LPWAN support', value: 0 },
-{ legend: 'Security', axis: 'Device Management', value: 0 }
+{ legend: 'Security', axis: 'Device Management', value: 0 },
+{ legend: 'Security', axis: 'Edge Ready', value: 0.4 }
 ],
 [
 { legend: 'Payment Processing', axis: 'Rules Engine', value: 1.0},
@@ -135,7 +143,8 @@ var industries = [
 { legend: 'Payment Processing', axis: 'Integration Simplicity', value: 1.0},
 { legend: 'Payment Processing', axis: 'Data Ingestion', value: 0},
 { legend: 'Payment Processing', axis: 'LPWAN support', value: 0 },
-{ legend: 'Payment Processing', axis: 'Device Management', value: 0 }
+{ legend: 'Payment Processing', axis: 'Device Management', value: 0 },
+{ legend: 'Payment Processing', axis: 'Edge Ready', value: 0 }
 ],
 [
 { legend: 'Health Care', axis: 'Rules Engine', value: 1.0},
@@ -150,7 +159,8 @@ var industries = [
 { legend: 'Health Care', axis: 'Integration Simplicity', value: 1.0},
 { legend: 'Health Care', axis: 'Data Ingestion', value: 0.5 },
 { legend: 'Health Care', axis: 'LPWAN support', value: 0 },
-{ legend: 'Health Care', axis: 'Device Management', value: 0.2 }
+{ legend: 'Health Care', axis: 'Device Management', value: 0.2 },
+{ legend: 'Health Care', axis: 'Edge Ready', value: 0.75 }
 ],
 [
 { legend: 'Industry 4.0', axis: 'Rules Engine', value: 0.75},
@@ -165,7 +175,8 @@ var industries = [
 { legend: 'Industry 4.0', axis: 'Integration Simplicity', value: 1.0},
 { legend: 'Industry 4.0', axis: 'Data Ingestion', value: 1 },
 { legend: 'Industry 4.0', axis: 'LPWAN support', value: 1 },
-{ legend: 'Industry 4.0', axis: 'Device Management', value: 1 }
+{ legend: 'Industry 4.0', axis: 'Device Management', value: 1 },
+{ legend: 'Industry 4.0', axis: 'Edge Ready', value: 0.85 }
 ],
 [
 { legend: 'Connected Buildings', axis: 'Rules Engine', value: 0.95},
@@ -180,7 +191,8 @@ var industries = [
 { legend: 'Connected Buildings', axis: 'Integration Simplicity', value: 1},
 { legend: 'Connected Buildings', axis: 'Data Ingestion', value: 1},
 { legend: 'Connected Buildings', axis: 'LPWAN support', value: 0.8},
-{ legend: 'Connected Buildings', axis: 'Device Management', value: 0.9}
+{ legend: 'Connected Buildings', axis: 'Device Management', value: 0.9},
+{ legend: 'Connected Buildings', axis: 'Edge Ready', value: 0.95 }
 ],
 [
 { legend: 'Agriculture', axis: 'Rules Engine', value: 0.2},
@@ -195,7 +207,8 @@ var industries = [
 { legend: 'Agriculture', axis: 'Integration Simplicity', value: 1},
 { legend: 'Agriculture', axis: 'Data Ingestion', value: 0.6},
 { legend: 'Agriculture', axis: 'LPWAN support', value: 1},
-{ legend: 'Agriculture', axis: 'Device Management', value: 0.5}
+{ legend: 'Agriculture', axis: 'Device Management', value: 0.5},
+{ legend: 'Agriculture', axis: 'Edge Ready', value: 0.1 }
 ],
 [
 { legend: 'Track-Trace', axis: 'Rules Engine', value: 0.2},
@@ -210,10 +223,11 @@ var industries = [
 { legend: 'Track-Trace', axis: 'Integration Simplicity', value: 1},
 { legend: 'Track-Trace', axis: 'Data Ingestion', value: 0.6},
 { legend: 'Track-Trace', axis: 'LPWAN support', value: 1},
-{ legend: 'Track-Trace', axis: 'Device Management', value: 0.5}
+{ legend: 'Track-Trace', axis: 'Device Management', value: 0.5},
+{ legend: 'Track-Trace', axis: 'Edge Ready', value: 0.2 }
 ],
 [
-{ legend: 'Edge Solution', axis: 'Rules Engine', value: 0.4},
+{ legend: 'Edge Solution', axis: 'Rules Engine', value: 0.5},
 { legend: 'Edge Solution', axis: 'Time Series Analysis', value: 0.8},
 { legend: 'Edge Solution', axis: 'Event Processing', value: 0.8},
 { legend: 'Edge Solution', axis: 'Stream Processing', value: 1},
@@ -225,7 +239,8 @@ var industries = [
 { legend: 'Edge Solution', axis: 'Integration Simplicity', value: 1},
 { legend: 'Edge Solution', axis: 'Data Ingestion', value: 1},
 { legend: 'Edge Solution', axis: 'LPWAN support', value: 0.7},
-{ legend: 'Edge Solution', axis: 'Device Management', value: 0.25}
+{ legend: 'Edge Solution', axis: 'Device Management', value: 0.25},
+{ legend: 'Edge Solution', axis: 'Edge Ready', value: 1 }
 ],
 [
 { legend: 'Edge-Gateway', axis: 'Rules Engine', value: 0.1},
@@ -240,7 +255,8 @@ var industries = [
 { legend: 'Edge-Gateway', axis: 'Integration Simplicity', value: 1},
 { legend: 'Edge-Gateway', axis: 'Data Ingestion', value: 1},
 { legend: 'Edge-Gateway', axis: 'LPWAN support', value: 0.5},
-{ legend: 'Edge-Gateway', axis: 'Device Management', value: 0.75}
+{ legend: 'Edge-Gateway', axis: 'Device Management', value: 0.75},
+{ legend: 'Edge-Gateway', axis: 'Edge Ready', value: 1 }
 ],
 [
 { legend: 'Oil-Gas', axis: 'Rules Engine', value: 0.8 },
@@ -255,7 +271,8 @@ var industries = [
 { legend: 'Oil-Gas', axis: 'Integration Simplicity', value: 1},
 { legend: 'Oil-Gas', axis: 'Data Ingestion', value: 1},
 { legend: 'Oil-Gas', axis: 'LPWAN support', value: 0.5},
-{ legend: 'Oil-Gas', axis: 'Device Management', value: 0.15}
+{ legend: 'Oil-Gas', axis: 'Device Management', value: 0.15},
+{ legend: 'Oil-Gas', axis: 'Edge Ready', value: 0.1 }
 ],
 [
 { legend: 'Utility', axis: 'Rules Engine', value: 0.2 },
@@ -270,7 +287,8 @@ var industries = [
 { legend: 'Utility', axis: 'Integration Simplicity', value: 1},
 { legend: 'Utility', axis: 'Data Ingestion', value: 1},
 { legend: 'Utility', axis: 'LPWAN support', value: 1},
-{ legend: 'Utility', axis: 'Device Management', value: 1}
+{ legend: 'Utility', axis: 'Device Management', value: 1},
+{ legend: 'Utility', axis: 'Edge Ready', value: 0 }
 ]
 // ,
 // [
@@ -289,13 +307,17 @@ var industries = [
 function calculateScore () {
   return industries.map(industry => {
    var scores = {}
+   const PENALTY = 0
    data.forEach(rule => {
      var score = 0
      rule.forEach(m =>{
-       score += parseFloat(m.value) * parseFloat(industry.find(x => x.axis === m.axis).value)
+       var industry_value = parseFloat(industry.find(x => x.axis === m.axis).value)
+       score += m.value * industry_value
+       if(industry_value > 0.75 && m.value === 0)
+        score -= PENALTY * industry_value
      })
      const total = industry.map(item => item.value).reduce((prev, next) => prev + next)
-     scores[rule[0].legend] = parseFloat(score /total * 100).toFixed(1)
+     scores[rule[0].legend] = parseFloat(score / total * 100).toFixed(1)
    })
    return { legend: industry[0].legend, scores } 
   })

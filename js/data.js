@@ -45,6 +45,21 @@ var data = [
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Device Management', value: 1}
 ],
 [
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Rules Engine', value: 0.25},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Time Series Analysis', value: 0.7},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Event Processing', value: 0.8},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Stream Processing', value: 0.5},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Machine Learning/AI',  value: 0.6},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'APIs & serverless', value: 0.2},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Zero-touch-automation', value: 0.6},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Scalability', value: 0.5},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Explainability', value: 0.3},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Integration Simplicity', value: 0.8},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Data Ingestion', value: 1},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'LPWAN support', value: 1},
+{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Device Management', value: 1}
+],
+[
 { legend: 'Kafka', shortLegend: 'Kafka', axis: 'Rules Engine', value: 0 },
 { legend: 'Kafka', shortLegend: 'Kafka', axis: 'Time Series Analysis', value: 0},
 { legend: 'Kafka', shortLegend: 'Kafka', axis: 'Event Processing', value: 1.0},

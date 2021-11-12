@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Elev Gorovich">
 
-    <title>Rules Engine Benchmark</title>
+    <title>Platform Benchmark</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -58,7 +58,7 @@
     </nav>
     <section style="padding: 4rem 0" class="bg-light">
       <div id="results" class="mx-auto text-center">
-        <h1>Rules Engine Benchmark Results</h1>
+        <h1>Platform Benchmark Results</h1>
       </div>
       <br>
       <div class="container">
@@ -69,7 +69,7 @@
 
      <section style="padding: 4rem 0" class="bg-light">
       <div id="industries" class="mx-auto text-center">
-        <h1>Automation Requirements per Vertical</h1>
+        <h1>Platform Requirements per Vertical</h1>
       </div>
       <br>
       <div class="container">
@@ -92,50 +92,6 @@
           <div class="card card-body">
             <p><i>Please note that in most of the cases Rules Engine are complemented by other tools and applications in order to create end to end solutions. This score indicates how much of work on business automation (rules) is required before customers can build the end solution on top (mobile app, customer facing app etc.). Every score less than 50-60% indicates that additional tools and applications will be required to close the automation gap first.</i></p>
             <a data-toggle="collapse" href="#collapseScore" role="button" aria-expanded="false" aria-controls="collapseRules">Close</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-   <section style="padding: 4rem 1rem" class="bg-light">
-    <div class="mx-auto text-center">
-          <h3 style="margin-bottom:3rem;">Rules Engine Score</h1>
-        </div>
-      <div class="container">
-        <table id="table" class="table table-hover table-benchmark">
-          <thead class="thead-dark">
-            <tr>
-              <th data-field="rules"></th>
-              <th data-field="Modeling Complex Logic">Modeling Complex Logic</th>
-              <th data-field="Time Series Analysis">Time Series Analysis</th>
-              <th data-field="Stream Processing">Stream Processing</th>
-              <th data-field="Modeling Uncertainty">Modeling Uncertainty</th>
-              <th data-field="APIs & serverless">APIs & serverless</th>
-              <th data-field="Zero-touch automation">Zero-touch automation</th>
-              <th data-field="Explainability">Explainability</th>
-              <th data-field="Scalability">Scalability</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-      <div class="container">
-        <hr>
-        <a data-toggle="collapse" href="#collapseRules" role="button" aria-expanded="false" aria-controls="collapseRules">Rules Engines by type</a>
-        <div class="collapse" id="collapseRules">
-          <div class="card card-body">
-            <ul>
-              <li>Forward Chaining engines: Redhat Drools, Cumulocity, Eclipse Smart Home, AWS rule engine, Thingsboard</li>
-              <li>Condition/action: ifttt.com</li>
-              <li>FBP engines: Yahoo! Pipes, Node-RED (and various clones), Eclipse Kura. Most of the SaaS automation rules engines are of this type. </li>
-              <li>Stream Processing engines: Apache Storm, Flink, Samza</li>
-              <li>CEP engines: WSO2, Litmus or Foghorn.</li>
-              <li>FSM engines: AWS Step functions, IoT Explorer from Salesforce</li>
-              <li>Decision trees: Drools decision tables, OpenL Tablets</li>
-            </ul>
-            <p><i>Please note this list is not exhaustive and only includes some of the most common rules engines.</i></p>
-            <a data-toggle="collapse" href="#collapseRules" role="button" aria-expanded="false" aria-controls="collapseRules">Close</a>
           </div>
         </div>
       </div>
@@ -183,35 +139,6 @@
       $('[data-toggle="tooltip"]').on("mouseleave", function(){
           $(this).tooltip("hide"); 
       })
-
-      function round(number, increment, offset) {
-        return Math.floor((number - offset) / increment ) * increment + offset;
-      }
-
-      var tableData = []
-      var waylay;
-      data.forEach(function(rule) {
-        //console.log(rule)
-        var obj = { rules: '<a data-toggle="collapse" href="#collapseRules" role="button" aria-expanded="false" aria-controls="collapseRules">' + rule[0].legend + '</a>'}
-        var backgroundColor = "#93a0ae"
-        rule.forEach(function (metric) {
-          var value = metric.value * 100 + "%"
-          var color = "bg-danger"
-          if(metric.value >= 0.25)
-            color = "bg-warning"
-          if(metric.value > 0.5)
-            color = ""
-          if(metric.value > 0.75)
-            color = "bg-success"
-
-          obj[metric.axis] = '<div style="background-color: '+ backgroundColor +'" class="progress"><div class="progress-bar '+color+' " role="progressbar" style="width:'+value+';" aria-valuenow="'+value+'" aria-valuemin="0" aria-valuemax="100">'+value+'</div></div>'
-        })
-        tableData.push(obj)
-      })
-      $('#table').bootstrapTable({
-        data: tableData
-      });
-
     });
 
     window.dataLayer = window.dataLayer || [];

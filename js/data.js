@@ -227,7 +227,7 @@ var industries = [
 { legend: 'Track-Trace', axis: 'Edge Ready', value: 0.2 }
 ],
 [
-{ legend: 'Edge Solution', axis: 'Rules Engine', value: 0.5},
+{ legend: 'Edge Solution', axis: 'Rules Engine', value: 0.8},
 { legend: 'Edge Solution', axis: 'Time Series Analysis', value: 0.8},
 { legend: 'Edge Solution', axis: 'Event Processing', value: 0.8},
 { legend: 'Edge Solution', axis: 'Stream Processing', value: 1},
@@ -307,7 +307,7 @@ var industries = [
 function calculateScore () {
   return industries.map(industry => {
    var scores = {}
-   const PENALTY = 0
+   const PENALTY = 0.1
    data.forEach(rule => {
      var score = 0
      rule.forEach(m =>{

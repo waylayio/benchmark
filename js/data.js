@@ -4,7 +4,7 @@ var data = [
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'Time Series Analysis', value: 1},
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'Event Processing', value: 1},
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'Stream Processing', value: 1},
-{ legend: 'Waylay', shortLegend: 'Waylay', axis: 'Machine Learning/AI', value: 1.0},
+{ legend: 'Waylay', shortLegend: 'Waylay', axis: 'Machine Learning/AI', value: 0.85},
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'APIs & serverless', value: 1.0},
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'Zero-touch-automation', value: 1},
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'Scalability', value: 0.85},
@@ -48,38 +48,6 @@ var data = [
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Edge Ready', value: 0}
 ],
 [
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Rules Engine', value: 0.25},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Time Series Analysis', value: 0.7},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Event Processing', value: 0.5},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Stream Processing', value: 0.5},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Machine Learning/AI',  value: 0.6},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'APIs & serverless', value: 0.2},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Zero-touch-automation', value: 0.2},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Scalability', value: 0.5},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Explainability', value: 0.3},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Integration Simplicity', value: 0.5},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Data Ingestion', value: 0.85},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'LPWAN support', value: 0.75},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Device Management', value: 1},
-{ legend: 'Mindsphere', shortLegend: 'Mindsphere', axis: 'Edge Ready', value: 0}
-],
-[
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Rules Engine', value: 0 },
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Time Series Analysis', value: 0},
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Event Processing', value: 1.0},
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Stream Processing', value: 1 },
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Machine Learning/AI', value: 0},
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'APIs & serverless', value: 0},
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Zero-touch-automation', value: 0},
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Scalability', value: 1.0},
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Explainability', value:0},
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Integration Simplicity', value: 0.3},
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Data Ingestion', value: 0.5},
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'LPWAN support', value: 0},
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Device Management', value: 0},
-{ legend: 'Kafka', shortLegend: 'Kafka', axis: 'Edge Ready', value: 0}
-],
-[
 { legend: 'Kafka-Influx-Grafana', shortLegend: 'Kafka-Influx-Grafana', axis: 'Rules Engine', value: 0 },
 { legend: 'Kafka-Influx-Grafana', shortLegend: 'Kafka-Influx-Grafana', axis: 'Time Series Analysis', value: 0.75},
 { legend: 'Kafka-Influx-Grafana', shortLegend: 'Kafka-Influx-Grafana', axis: 'Event Processing', value: 1.0},
@@ -110,6 +78,22 @@ var data = [
 { legend: 'Node RED', shortLegend: 'Node RED', axis: 'LPWAN support', value: 0.1},
 { legend: 'Node RED', shortLegend: 'Node RED', axis: 'Device Management', value: 0},
 { legend: 'Node RED', shortLegend: 'Node RED', axis: 'Edge Ready', value: 1}
+],
+[
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'Rules Engine', value: 0.75},
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'Time Series Analysis', value: 0.05},
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'Event Processing', value: 0.5},
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'Stream Processing', value: 0.1},
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'Machine Learning/AI',  value: 0},
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'APIs & serverless', value: 0.3},
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'Zero-touch-automation', value: 0.7},
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'Scalability', value: 0.65},
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'Explainability', value: 0.8},
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'Integration Simplicity', value: 0.3},
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'Data Ingestion', value: 0.3},
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'LPWAN support', value: 0},
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'Device Management', value: 0},
+{ legend: 'BPM', shortLegend: 'BPM', axis: 'Edge Ready', value: 0.75}
 ]
 ];
 

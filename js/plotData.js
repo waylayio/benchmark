@@ -1,7 +1,7 @@
 var formatTooltip = function(d) {
   //to do FIND a score
-  //return "<h3>" + "Best score" +"</h3>"+ "<p>" + d.legend + "</p><br>"
-  //return JSON.stringify(d.scores)
+  // return "<h3>" + "Best score" +"</h3>"+ "<p>" + d.legend + "</p><br>"
+  //return JSON.stringify(d)
 }
 
 var margin = { top: 100, right: 100, bottom: 100, left: 100}

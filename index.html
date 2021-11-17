@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Elev Gorovich">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Elev Gorovich">
 
-    <title>Platform Benchmark</title>
+  <title>Platform Benchmark</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
 
-    <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="shortcut icon" href="img/favicon.png">
 
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="https://rawgit.com/wenzhixin/bootstrap-table/master/dist/bootstrap-table.min.css"rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://rawgit.com/wenzhixin/bootstrap-table/master/dist/bootstrap-table.min.css"rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
 
-    <style>
-      .asterisk {
-        color: #b8241e;
-        font-size: 150%;
-        font-weight: normal;
-        position: relative;
-      }
-      .indicates-required {
-        color: #b8241e;
-        font-size: 12px;
-        text-align: center;
-      }
-    </style> 
-  </head>
+  <style>
+  .asterisk {
+    color: #b8241e;
+    font-size: 150%;
+    font-weight: normal;
+    position: relative;
+  }
+  .indicates-required {
+    color: #b8241e;
+    font-size: 12px;
+    text-align: center;
+  }
+  </style> 
+</head>
 
-  <body id="page-top">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4VFDC6"
+<body id="page-top">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4VFDC6"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -56,25 +56,37 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Top</a>
       </div>
     </nav>
+    <section id="introduction" class="about-section text-center">
+      <div class="row" >
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">About Platform Benchmark</h2>
+          <p class="text-white">Back in the day, discussing middleware was a simple conversation, because we all assumed that the middleware was a database. Benchmarking databases was also a rather obvious task: metrics were related to IO performances, query speed, data storage size, backups, rollbacks etc. In today's world, bringing conversation about cloud/edge middeleware is not that trivial, as set of tools and even the feature set depends on many variables.</p><p class="text-white">For this benchark exercise, we focused on a set of features that are typically required for a given vertical, and then looked back at which middleware suite can bring us as close as possible to the final goal - getting the solution out.</p>
+          <p class="text-white">
+          Please note that in most of the cases middleware platforms are complemented by other tools and applications in order to create end to end solutions. This score indicates how much work on business automation (rules) is required before customers can build the end solution on top (mobile app, customer facing app etc.). Every score less than 50-60% indicates that additional tools and applications will be required to close the automation gap first.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section style="padding: 4rem 0" class="bg-light">
+      <div id="industries" class="mx-auto text-center">
+        <h1>Platform Requirements per Vertical</h1>
+      </div>
+      <br>
+      <div class="container">
+        <div class="radarChartIndustries"></div>
+        <div class="legend2"></div>
+      </div>
+    </section>
+
     <section style="padding: 4rem 0" class="bg-light">
       <div id="results" class="mx-auto text-center">
         <h1>Platform Benchmark Results</h1>
       </div>
       <br>
       <div class="container">
-          <div class="radarChart"></div>
-          <div class="legend1"></div>
-      </div>
-    </section>
-
-     <section style="padding: 4rem 0" class="bg-light">
-      <div id="industries" class="mx-auto text-center">
-        <h1>Platform Requirements per Vertical</h1>
-      </div>
-      <br>
-      <div class="container">
-          <div class="radarChartIndustries"></div>
-          <div class="legend2"></div>
+        <div class="radarChart"></div>
+        <div class="legend1"></div>
       </div>
     </section>
 
@@ -97,7 +109,7 @@
       </div>
     </section>
 
-   
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -119,25 +131,25 @@
 
 
 
-">></script>
+    ">></script>
     <style>      
-      .legend {
-        font-family: 'Fira Sans';
-        fill: #333333;
-      }
-      .tooltip {
-        fill: #333333;
-      }
-      input[type=checkbox] {
-        transform: scale(2);
-      }
+    .legend {
+      font-family: 'Fira Sans';
+      fill: #333333;
+    }
+    .tooltip {
+      fill: #333333;
+    }
+    input[type=checkbox] {
+      transform: scale(2);
+    }
     </style>
     <script type="text/javascript">
     new Chart("myChart",chart)
     $(function() {
       $('[data-toggle="tooltip"]').tooltip(); 
       $('[data-toggle="tooltip"]').on("mouseleave", function(){
-          $(this).tooltip("hide"); 
+        $(this).tooltip("hide"); 
       })
     });
 
@@ -151,4 +163,4 @@
 
   </body>
 
-</html>
+  </html>

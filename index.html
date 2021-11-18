@@ -149,11 +149,67 @@
              score += industry_value * m.value
            }
         </pre>
-            <a data-toggle="collapse" href="#collapseScore" role="button" aria-expanded="false" aria-controls="collapseRules">Close</a>
+          <a data-toggle="collapse" href="#collapseScore" role="button" aria-expanded="false" aria-controls="collapseRules">Close</a>
           </div>
         </div>
       </div>
     </section>
+
+    <section style="padding: 4rem 0" class="bg-light">
+      <div id="results" class="col-lg-8 mx-auto">
+        <h1>Q&A</h1>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div>
+          <h3>How was the total score computed?</h3>
+          <p>Formula is defined as a total score sum per vertical, using this calculation (and finally presented in %): </p> 
+              <pre>
+             //for each metric of a given middleware
+             const PENALTY =  1 / num_metrics
+             var value = industry_value - middleware_metric.value
+             if(industry_value === 1 && value > 0.5) {
+               score -= PENALTY * value
+             } else {
+               score += industry_value * m.value
+             }
+        </pre>
+        </div>
+        <div>
+          <h3>Why didn't you include feature X in the score?</h3>
+          <p>There are things like end user management, or UI widgets etc that are necessary to build final applications, but we didn't see them as a middleware requirement as these are often one-off features implemented by end customers. But we could be wrong, tell us.</p> 
+        </div> 
+        <div>
+          <h3>Why did you skip vertical X?</h3>
+          <p>That's a great question. For instance, you may argue that insurance or market automations are verticals. Yes there are, but we are simply not active in them, hence we didn't include them. That doesn't mean we will not at one time, but we simply don't understand either the vertical enough, or players in that vertical right now.</p> 
+        </div>  
+        <div>
+          <h3>Why did you skip a vertical competitor X?</h3>
+          <p>Another great question. For each vertical, first and foremost, you have vertical application providers, not middleware providers. They match 100% of what they think you need. If that is the case for you, no need to search any further.</p> 
+        </div> 
+        <div>
+          <h3>Why did you skip a middleware competitor X?</h3>
+          <p>We skip them all, except the big two. We are not able to follow every competitor closely enough and therefore we would be getting at risk of under or over reporting each of them. Exceptions are AWS and Azure, where we follow very closely what they do, as in most of the cases, the customer choices are: AWS or Azure, "do it myself", or vendor X/Y/Z.</p> 
+        </div> 
+        <div>
+          <h3>How are you sure that you got a metric for that competitor right?</h3>
+          <p>We are not, we might be wrong. But we also listen to what our customers have tried in the past, and where the weak spots and our strengths are, otherwise, why would anyone select Waylay? Interesting observation is that often a particular middleware vendor's weak spot is compensated by skilled (and pricey) ISV, so the end customer gets a final solution that meets her needs (of course time to market or the price is something you add on top).</p> 
+        </div>  
+        <div>
+          <h3>Why you didn't include the price/TCO in this score?</h3>
+          <p>This is hard to calculate, even if the vendors like AWS/Azure are doing volume charging (and discounts). Unless you know the exact customer use case, it is hard to compute that cost. That's a big issue. Another one is that <strong> the integration cost is inversely proportional to the Integration Simplicity Metric </strong>, but that alone depends on the time and skills and price of ISVs. Still it is safe to say, the bigger the gap in score, the end solution will be more costly and will take longer to build.</p> 
+        </div> 
+        <div>
+          <h3>Why did you put Kafka-Influx-Grafana in the list?</h3>
+          <p>This is a shortcut for saying "do it yourself". Of course you can easily add there mongo, redis, but let us not forget you still need a security/access layer on top etc... Sky's the limit what you can build this way, so is the time and price to build a solution this way.</p> 
+        </div> 
+        <div>
+          <h3>Didn't you also use similar components to build Waylay?</h3>
+          <p>Yes indeed! But we do it for living (and for a long time) and around our own patented automation technology, which brings all these things together in the most comprehensive possible way.</p> 
+        </div>     
+      </div>
+    </section>
+
+
 
 
     <!-- Bootstrap core JavaScript -->

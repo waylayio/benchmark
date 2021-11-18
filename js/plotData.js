@@ -43,7 +43,7 @@ var text = svg.append("text")
 .attr("font-size", "1.5em")
 .attr("padding-bottom", "2.5em")
 .attr("fill", "#404040")
-.text("Benchmark results")
+.text("Platform Scores")
 
 var legend = svg.append("g")
 .attr("class", "legend")

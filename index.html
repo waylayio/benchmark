@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="Elev Gorovich">
 
-  <title>Platform Benchmark</title>
+  <title>Platform Middleware Benchmark</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -59,8 +59,9 @@
     <section id="introduction" class="about-section text-center">
       <div class="row" >
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">About Platform Benchmark</h2>
-          <p class="text-white">Back in the day, discussing middleware was a simple conversation, because we all assumed that the middleware was a database. Benchmarking databases was also a rather obvious task: metrics were related to IO performances, query speed, data storage size, backups, rollbacks etc. In today's world, bringing conversation about cloud/edge middeleware is not that trivial, as set of tools and even the feature set depends on many variables.
+          <h2 class="text-white mb-4">About Platform (Middleware) Benchmark</h2>
+          <p class="text-white">Back in the day, discussing middleware was a simple conversation, because we all assumed that the middleware was a database. Benchmarking databases was also a rather obvious task: metrics were related to IO performances, query speed, data storage size, backups, rollbacks etc. In today's world, bringing conversation about cloud/edge middleware is not that trivial, as set of tools and even the feature set depends on many variables.</p>
+          <p class="text-white">We recognize that writing this article was a tricky business, as many metrics and vertical requirements are not necessarily exact science, which leaves our readers with healthy scepticism about results and motivation for this exercise. As one of the pioneers of <i> Automation and Low Code</i>, we tried, the best to our knowledge, to synthesize our experience from working closely with our customers over the past decade. As in every conversation,  the common ground of a conversation starts with the set of propositions that we have agreed to treat as true or at least relevant in the conversational context. Therefore we invite everyone to comment or participate in this conversation further. So please send us a note or ask for the call - we listen!</p> 
         </div>
 
       </div>
@@ -70,24 +71,24 @@
       <div class="row" >
         <div class="col-lg-8 mx-auto">
           <br>
-          <h1 >Platform Middlware Capabilities</h1>
-          <p>For this benchark exercise, we focused on a set of features that are typically required for a given vertical, and then looked back at which middleware suite can bring us as close as possible to the final goal - getting the solution out.</p>
+          <h1>Platform Middleware Capabilities</h1>
+          <p>For this benchmark exercise, we focused on a set of features that are typically required for a given vertical, and then looked back at which middleware suite can bring us as close as possible to the final goal - getting the solution out.</p>
           <ul>
-            <li>Rules Engine (how easy is to express the business logic)</li>
-            <li>Time Series Analysis (database and analytics on top)</li>
+            <li>Rules Engine (how easy it is to express the business logic). For more information, please check our white paper: <a href="https://www.waylay.io/publications/the-big-book-of-iot-automation">The Big Book of IoT Automation</a></li>
+            <li>Time Series Analysis (database and analytics on top).</li>
             <li>Event Processing (events such as <i>motion, door open/close </i> etc.)</li>
             <li>Stream Processing (capability to respond to streams as a data source)</li>
             <li>Machine Learning / AI capabilities</li>
             <li>Data Visualization</li>
-            <li>APIs & serverless</li>
-            <li>Zero-touch-automation (configure logic once, run always)</li>
+            <li>APIs & serverless, how easy is to add additional APIs into your solution</li>
+            <li>Zero-touch-automation (configure logic once, run always). From provisioning perspective, is not the same level of complexity to operate few hundreds of assets or few milions.</li>
             <li>Scalability</li>
             <li>Explainability (is it clear what is going on once the platform is in operations?)</li>
-            <li>Integration Simplicity (how easy is to setup the tool chain, how easy is to create an application on top?)</li>
+            <li>Integration Simplicity (how easy is to set up the tool chain, how easy is to create an application on top?). This metric reflects <strong>the overall cost and time (to market) </strong> to create an end to end solution</li>
             <li>Data Ingestion (different protocols, payloads formats etc.)</li>
             <li>LPWAN support (Sigfox, LoRa, NBIoT)</li>
             <li>Device Management (firmware, identity, security etc.)</li>
-            <li>Edge Ready (can exactly the same tooling be use at the edge)</li>
+            <li>Edge Ready (can <strong>exactly the same tooling</strong> be use at the edge)</li>
           </ul>
           <p><i>Please note that middleware platforms are always complemented by other tools and applications in order to create end to end solutions.</i></p>
         </div>
@@ -100,6 +101,7 @@
       </div>
       <br>
       <div class="container">
+         <p>Please hover over the <i> Requirements</i> legend in order to see in the middleware requirements for one vertical. On the radar chart, the scale for each metric goes from 0 to 100%. indicating the relative percentage of that feature required for a given vertical.</p>
         <div class="radarChartIndustries"></div>
         <div class="legend2"></div>
       </div>
@@ -107,7 +109,11 @@
 
     <section style="padding: 4rem 0" class="bg-light">
       <div id="results" class="col-lg-8 mx-auto">
-        <h1>Platform Benchmark Results</h1>
+        <h1>Platform Scores</h1>
+      </div>
+      <div id="results" class="col-lg-8 mx-auto">
+        <h2>How to read this chart?</h2>
+        <p>Please hover over the <i>Platform Scores</i> legend in order to see the middleware score. On the radar chart, the scale for each metric goes from 0 to 100%, indicating the relative percentage of that feature being available for a given platform. If the value of a metric is above 0 but less than 100%, that means that additional effort and/or tools are required to bring it to 100%, but sometimes even that is not possible.</p>
       </div>
       <br>
       <div class="container">
@@ -120,6 +126,10 @@
       <div id="industries" class="col-lg-8 mx-auto">
         <h1>Platform Score per Vertical</h1>
       </div>
+      <div id="results" class="col-lg-8 mx-auto">
+        <h2>How to read results?</h2>
+        <p>Result is computed as a total sum (overlap) between the vertical requirement and the middleware for each metric, presented as the percentage (0-100%). Please note that in most of the cases middleware platforms are complemented by other tools and applications in order to create end to end solutions anyway. Therefore this score indicates how much work is still required in the middleware before customers can build the end solution on top (mobile app, customer facing app etc.). Every score less than 50-60% indicates that additional tools and applications will be required to close the automation gap first.</p>
+      </div>
       <div class="container">
         <canvas id="myChart" style="width:100%"></canvas>
       </div>
@@ -128,7 +138,17 @@
         <a data-toggle="collapse" href="#collapseScore" role="button" aria-expanded="false" aria-controls="collapseRules">Explanation</a>
         <div class="collapse" id="collapseScore">
           <div class="card card-body">
-            <p><i>Please note that in most of the cases middleware platforms are complemented by other tools and applications in order to create end to end solutions. This score indicates how much of work on business automation (rules) is required before customers can build the end solution on top (mobile app, customer facing app etc.). Every score less than 50-60% indicates that additional tools and applications will be required to close the automation gap first.</i></p>
+            <p>Formula is defined as a total score sum per vertical, using this calculation (and finally presented in %): </p> 
+            <pre>
+           //for each metric of a given middleware
+           const PENALTY =  1 / num_metrics
+           var value = industry_value - middleware_metric.value
+           if(industry_value === 1 && value > 0.5) {
+             score -= PENALTY * value
+           } else {
+             score += industry_value * m.value
+           }
+        </pre>
             <a data-toggle="collapse" href="#collapseScore" role="button" aria-expanded="false" aria-controls="collapseRules">Close</a>
           </div>
         </div>
@@ -190,3 +210,8 @@
   </body>
 
   </html>
+
+
+
+
+

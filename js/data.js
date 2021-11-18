@@ -37,7 +37,7 @@ var data = [
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Rules Engine', value: 0.4},
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Time Series Analysis', value: 1.0},
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Event Processing', value: 1.0},
-{ legend: 'Azure', shortLegend: 'Azure', axis: 'Stream Processing', value: 0.5},
+{ legend: 'Azure', shortLegend: 'Azure', axis: 'Stream Processing', value: 1},
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Machine Learning/AI',  value: 1},
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Data Visualization',  value: 0.9},
 { legend: 'Azure', shortLegend: 'Azure', axis: 'APIs & serverless', value: 1},

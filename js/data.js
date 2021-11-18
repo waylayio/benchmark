@@ -258,23 +258,6 @@ var industries = [
 { legend: 'Edge Solution', axis: 'Edge Ready', value: 1 }
 ],
 [
-{ legend: 'Edge-Gateway', axis: 'Rules Engine', value: 0.1},
-{ legend: 'Edge-Gateway', axis: 'Time Series Analysis', value: 0},
-{ legend: 'Edge-Gateway', axis: 'Event Processing', value: 0},
-{ legend: 'Edge-Gateway', axis: 'Stream Processing', value: 0},
-{ legend: 'Edge-Gateway', axis: 'Machine Learning/AI', value: 0},
-{ legend: 'Edge-Gateway', axis: 'Data Visualization', value: 0.1},
-{ legend: 'Edge-Gateway', axis: 'APIs & serverless', value: 0},
-{ legend: 'Edge-Gateway', axis: 'Zero-touch-automation', value: 0},
-{ legend: 'Edge-Gateway', axis: 'Scalability', value: 0.2},
-{ legend: 'Edge-Gateway', axis: 'Explainability', value: 0},
-{ legend: 'Edge-Gateway', axis: 'Integration Simplicity', value: 0.85},
-{ legend: 'Edge-Gateway', axis: 'Data Ingestion', value: 1},
-{ legend: 'Edge-Gateway', axis: 'LPWAN support', value: 0.5},
-{ legend: 'Edge-Gateway', axis: 'Device Management', value: 0.25},
-{ legend: 'Edge-Gateway', axis: 'Edge Ready', value: 1 }
-],
-[
 { legend: 'Oil-Gas', axis: 'Rules Engine', value: 0.8 },
 { legend: 'Oil-Gas', axis: 'Time Series Analysis', value: 1.0 },
 { legend: 'Oil-Gas', axis: 'Event Processing', value: 0.2 },

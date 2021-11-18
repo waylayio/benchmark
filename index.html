@@ -146,8 +146,9 @@
            if(industry_value === 1 && value > 0.5) {
              score -= PENALTY * value
            } else {
-             score += industry_value * m.value
+             score += industry_value * middleware_metric.value
            }
+           //compute the final percentage ...
         </pre>
           <a data-toggle="collapse" href="#collapseScore" role="button" aria-expanded="false" aria-controls="collapseRules">Close</a>
           </div>

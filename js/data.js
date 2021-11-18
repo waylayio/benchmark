@@ -342,7 +342,7 @@ score.forEach(industry => {
   if(dd[r] === undefined) 
    dd[r] = []
   dd[r].push(industry.scores[r])
-  console.log(r, industry.scores[r])
+  //console.log(r, industry.scores[r])
  })
 })
 var i = 0

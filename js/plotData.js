@@ -133,6 +133,11 @@ var divLegend = d3.select("body").append("div")
  .data(industries)
  .enter()
  .append("a")
+ // .on("click", function(d) { 
+ //    $(".modal-header").text(d[0].legend)
+ //    $(".modal-body").text(IndustryInfo[d[0].legend])
+ //    $('#myModal').modal('show') 
+ // })
  .attr("xlink:href", function(d){ return "#" + d[0].legend.split(' ')[0].toLowerCase()})
  .on('mouseover', function (d,i){
    d3.selectAll(".radarArea")

@@ -1,4 +1,4 @@
-var data = [
+const data = [
 [
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'Rules Engine', value: 1.0},
 { legend: 'Waylay', shortLegend: 'Waylay', axis: 'Time Series Analysis', value: 1},
@@ -120,24 +120,24 @@ var data = [
 ]
 ];
 
-var industries = [
-[
-{ legend: 'Security', axis: 'Rules Engine', value: 1.0},
-{ legend: 'Security', axis: 'Time Series Analysis', value: 1.0},
-{ legend: 'Security', axis: 'Event Processing', value: 1.0},
-{ legend: 'Security', axis: 'Stream Processing', value: 1.0},
-{ legend: 'Security', axis: 'Machine Learning/AI',  value: 1},
-{ legend: 'Security', axis: 'Data Visualization',  value: 0.1},
-{ legend: 'Security', axis: 'APIs & serverless', value: 1.0},
-{ legend: 'Security', axis: 'Zero-touch-automation', value: 1.0},
-{ legend: 'Security', axis: 'Scalability', value: 1.0},
-{ legend: 'Security', axis: 'Explainability', value: 1.0},
-{ legend: 'Security', axis: 'Integration Simplicity', value: 1.0},
-{ legend: 'Security', axis: 'Data Ingestion', value: 1.0},
-{ legend: 'Security', axis: 'LPWAN support', value: 0 },
-{ legend: 'Security', axis: 'Device Management', value: 0 },
-{ legend: 'Security', axis: 'Edge Ready', value: 0.4 }
-],
+const industries = [
+// [
+// { legend: 'Security', axis: 'Rules Engine', value: 1.0},
+// { legend: 'Security', axis: 'Time Series Analysis', value: 1.0},
+// { legend: 'Security', axis: 'Event Processing', value: 1.0},
+// { legend: 'Security', axis: 'Stream Processing', value: 1.0},
+// { legend: 'Security', axis: 'Machine Learning/AI',  value: 1},
+// { legend: 'Security', axis: 'Data Visualization',  value: 0.1},
+// { legend: 'Security', axis: 'APIs & serverless', value: 1.0},
+// { legend: 'Security', axis: 'Zero-touch-automation', value: 1.0},
+// { legend: 'Security', axis: 'Scalability', value: 1.0},
+// { legend: 'Security', axis: 'Explainability', value: 1.0},
+// { legend: 'Security', axis: 'Integration Simplicity', value: 1.0},
+// { legend: 'Security', axis: 'Data Ingestion', value: 1.0},
+// { legend: 'Security', axis: 'LPWAN support', value: 0 },
+// { legend: 'Security', axis: 'Device Management', value: 0 },
+// { legend: 'Security', axis: 'Edge Ready', value: 0.4 }
+// ],
 [
 { legend: 'Payment Processing', axis: 'Rules Engine', value: 1.0},
 { legend: 'Payment Processing', axis: 'Time Series Analysis', value: 1.0},
@@ -291,7 +291,12 @@ var industries = [
 { legend: 'Utility', axis: 'Device Management', value: 1},
 { legend: 'Utility', axis: 'Edge Ready', value: 0 }
 ]
-];
+]
+
+// const IndustryInfo = {
+//  'Security' : 'Various tools must be deployed on a security platform to function as a single, integrated solution.  All management, configuration, and API needs to be orchestrated in one place',
+//  'Payment Processing': 'Payment Processing'
+// }
 
 
 function calculateScore () {

@@ -29,7 +29,7 @@ var data = [
 { legend: 'AWS', shortLegend: 'AWS', axis: 'Explainability', value: 0.6},
 { legend: 'AWS', shortLegend: 'AWS', axis: 'Integration Simplicity', value: 0.3},
 { legend: 'AWS', shortLegend: 'AWS', axis: 'Data Ingestion', value: 0.9},
-{ legend: 'AWS', shortLegend: 'AWS', axis: 'LPWAN support', value: 0.2},
+{ legend: 'AWS', shortLegend: 'AWS', axis: 'LPWAN support', value: 0.9},
 { legend: 'AWS', shortLegend: 'AWS', axis: 'Device Management', value: 0.8},
 { legend: 'AWS', shortLegend: 'AWS', axis: 'Edge Ready', value: 0.25}
 ],
@@ -46,7 +46,7 @@ var data = [
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Explainability', value: 0.3},
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Integration Simplicity', value: 0.5},
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Data Ingestion', value: 1},
-{ legend: 'Azure', shortLegend: 'Azure', axis: 'LPWAN support', value: 0.4},
+{ legend: 'Azure', shortLegend: 'Azure', axis: 'LPWAN support', value: 0.9},
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Device Management', value: 1},
 { legend: 'Azure', shortLegend: 'Azure', axis: 'Edge Ready', value: 0.4}
 ],

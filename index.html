@@ -81,17 +81,17 @@
             <li>Time Series Analysis (database and analytics on top).</li>
             <li>Event Processing (events such as <i>motion, door open/close </i> etc.)</li>
             <li>Stream Processing (capability to respond to streams as a data source)</li>
-            <li>Machine Learning / AI capabilities</li>
+            <li>Machine Learning / AI capabilities. See the Waylay solution <a href="https://docs.waylay.io/#/features/byoml/">Bring your own model</a></li>
             <li>Data Visualization</li>
             <li>APIs & serverless, how easy is to add additional APIs into your solution</li>
             <li>Zero-touch-automation (configure logic once, run always). From provisioning perspective, is not the same level of complexity to operate few hundreds of assets or few milions.</li>
             <li>Scalability</li>
             <li>Explainability (is it clear what is going on once the application is in operations?)</li>
             <li>Integration Simplicity (how easy is to set up the tool chain, how easy is to create an application on top?). This metric reflects <strong>the overall cost and time (to market) </strong> to create an end to end solution</li>
-            <li>Data Ingestion (different protocols, payloads formats etc.)</li>
-            <li>LPWAN support (Sigfox, LoRa, NBIoT)</li>
+            <li>Data Ingestion Layer, responsible for protocol normalization and optionally payload transformation. See the <a href="https://docs.waylay.io/#/features/data_ingestion/">link</a></li>
+            <li>LPWAN support (Sigfox, LoRa, NBIoT), normally this is done by setting up webhooks for data forward (and sometimes uplink config update), so any solution that allows for webhooks should be fine. It often requires payload and TLS decoding (preferable with reusable libraries). See the Waylay solution <a href="https://docs.waylay.io/#/features/data_ingestion/?id=lpwan-integration">LPWAN integration</a></li>
             <li>Device Management (firmware, identity, security etc.)</li>
-            <li>Edge Ready (can <strong>exactly the same tooling</strong> be use at the edge)</li>
+            <li>Edge Ready (can <strong>exactly the same tooling</strong> be use at the edge). Check the Waylay solution <a href="https://docs.waylay.io/#/features/automator/">TinyAutomator</a></li>
           </ul>
           <p><i>Please note that middleware platforms are always complemented by other tools and applications in order to create end to end solutions.</i></p>
         </div>
